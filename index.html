@@ -2,19 +2,147 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Web portofolio tailwind" />
+    <meta name="description" content="Hawi web portofolio tailwind" />
     <meta name="keyword" content="tailwindcss, CSS, tailwind" />
-    <meta name="hawi" content="yusuf_al_qardhawi" />
+    <meta name="author" content="yusuf_al_qardhawi" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <link rel="stylesheet" type="text/css" href="output.css" />
   <body>
     <!--Insert first layout here-->
     <!-- https://tailwindcss.com/docs -->
-    <section class="w-screen mx-auto px-4 h-8">Hawiqard Navbar</section>
-    <section class="w-screen mx-auto py-4 bg-zinc-300 h-32">About Me</section>
-    <section class="w-screen mx-auto py-4 bg-cyan-500 h-32">Framework Skill</section>
+    <section class="w-screen mx-auto px-4">
+      <nav class="flex flex-wrap p-6 justify-between">
+        <!-- Logo or Name branding -->
+        <div class="flex flex-shrink-0 mr-6">
+          <p class="h-10 w-50 mr-2">Hawiqard</p>
+        </div>
+        <!-- Menu -->
+        <div class="lg:hidden">
+          <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 hover:text-neutral-600 text-lg mr-4">About Me</a>
+            <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 hover:text-neutral-600 text-lg mr-4">Skill Framework</a>
+            <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 hover:text-neutral-600 text-lg mr-4">Recent Project</a>
+            <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 hover:text-neutral-600 text-lg mr-4">Contact Me</a>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-fuchsia-700 mt-4 lg:mt-0">Contact Me</a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="w-screen mx-auto py-4 gradient">
+      <div class="px-16 py-8 text-white text-center">
+        <h1 class="w-full text-5xl font-bold">About Me</h1>
+        <div class="mb-4">
+          <div class="bg-lime-700 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"></div>
+        </div>
+        <!-- Insert your description about me here -->
+        <h2 class="text-3xl font-bold mb-2">Hello, My name is Yusuf Al Qardhawi</h2>
+        <h3 class="text-lg mb-2">I am a Full Stack Web Developer and Tech News Enthusiast, I also made a fully responsive web design including database, security and management system</h3>
+        <div class="w-full">
+          <div class="px-4 py-4">
+            <img src="hawi_photo.png" alt="" class="shadow-lg rounded-full max-w-full mx-auto text-center w-32" />
+          </div>
+        </div>
+      </div>
+      <!-- Box placement for About Me section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+        <!-- 1st Box -->
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-lime-500 m-3 text-center">
+          <i class="fas fa-laptop-code fa-5x text-sky-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-xl md:text-xl mb-6">Programming</p>
+            <p class="text-gray-600 text-base mb-2">PHP</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Javascript</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">HTML and CSS</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-rose-500 hover:bg-blue-600 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Check</button>
+          </div>
+        </div>
+        <!-- 2nd Box -->
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-stone-300 m-3 text-center">
+          <i class="fas fa-database fa-5x text-sky-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Database</p>
+            <p class="text-gray-600 text-base mb-2">HeidiSQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">MySQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">MongoDB</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-rose-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Check</button>
+          </div>
+        </div>
+        <!-- 3rd Box -->
+        <div class="max-w-sm shadow-lg px-4 py-4 bg-rose-300 m-3 text-center">
+          <i class="fas fa-code fa-5x text-sky-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Framework</p>
+            <p class="text-gray-600 text-base mb-2">TailwindCSS</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">React.js</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Laravel</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button class="bg-rose-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Check</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skill" class="w-screen mx-auto py-4 bg-cyan-500">
+      <!-- Start Section of Framework Skill -->
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+          <img src="img/amy-hirschi-keyboard-unsplash.jpg" alt="">
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="md:pr-12">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700 font-mono">Skill Framework</h1>
+            <div class="mb-4">
+              <div class="h-1 mx-auto bg-pink-500 w-2/3 opacity-75 my-0 mx-0 rounded"></div>
+            </div>
+            <p class="mt-4 text-lg text-gray-600">
+              This below are details of my framework skill level mastery :
+          </p>
+          <ul class="list-none mt-4">
+            <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">TailwindCSS</p>
+                <div class="bg-gradient- from-purple-300 to-red-300">6 / 10</div>
+            </li>
+            <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">React.js</p>
+                <div class="gradient-skill w-7/10">7 / 10</div>
+            </li>
+            <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Laravel</p>
+                <div class="gradient-skill w-6/10">6 / 10</div>
+            </li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section part of Framework Skill -->
     <section class="w-screen mx-auto py-4 bg-emerald-300 h-32">Recent Project</section>
     <section class="w-screen mx-auto py-4 bg-amber-300 h-32">Contact Me</section>
     <section class="w-screen mx-auto py-4 bg-sky-300 h-32">This is Footer</section>
